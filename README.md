@@ -22,4 +22,4 @@ It lets you have the latest schedule locally on your desktop with just one comma
 **Note**:
 - You can make shell alias to run the script wherever you are ⚡️
 - If you want to automate it even more, feel free to create a cron job 🚜
-- Feel free to contribute
+- Feel free to contribute 🛵
