@@ -12,5 +12,14 @@ It lets you have the latest schedule locally on your desktop with just one comma
 
 ## Installation
 - If you're on Linux or macOS, just make sure you have ruby, and then:
-- `gem install nokogiri`
-- `gem install rest-client`
+  - `gem install nokogiri`
+  - `gem install rest-client`
+
+- If your device runs on Windows, you would probably have to use cygwin environment or its alternatives.
+
+## Usage
+`$ ruby fetch_schedule.rb`
+**Note**:
+- You can make shell alias to run the script wherever you are ⚡️
+- If you want to automate it even more, feel free to create a cron job 🚜
+- Feel free to contribute
