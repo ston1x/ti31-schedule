@@ -1,4 +1,4 @@
-# TI-31 Schedule
+# 🎓 TI-31 Schedule
 ## Description
 This script gets current schedule from vmititelu even if it gets updated.
 
