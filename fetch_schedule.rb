@@ -1,12 +1,13 @@
 require 'nokogiri'
 require 'rest-client'
 
-url = 'https://vmititelu.wordpress.com'
-path = "~/Desktop" # you can set your own path
+URL  = 'https://vmititelu.wordpress.com'
+PATH = '~/Desktop' # you can set your own path
 
-response = RestClient.get(url).body
-page = Nokogiri::HTML(response)
-schedule_url = page.at('p a:contains("Anul 3 TI!")').attributes["href"].value
-file_name = schedule_url.split("/").last
+post_url = Nokogiri::HTML(RestClient.get(URL).body)
+                   .at('p a:contains("anul universitar 2019")').attributes['href'].value
+schedule_url = Nokogiri::HTML(RestClient.get(post_url).body)
+                       .at('p a:contains("Anul 4 TI")').attributes['href'].value
+file_name = schedule_url.split('/').last
 
-system("wget #{schedule_url} -O #{path}/#{file_name}")
+system("wget #{schedule_url} -O #{PATH}/#{file_name}")
